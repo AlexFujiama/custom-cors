@@ -23,7 +23,7 @@ export function verifyPathString(ignorePath: string, reqPath: string): boolean {
     if (!ignorePath.startsWith('/')) ignorePath = '/' + ignorePath;
 
     const ignoreExactPath = [ignorePath, ignorePath + '/'];
-    const ignoreAnyMatch = reqPath.match(regexForAny(ignorePath.replace("*", ".*")))?.shift();
+    const ignoreAnyMatch = reqPath.match(regexForAny(ignorePath.replace("*", ".*").replace('/', './')))?.shift();
 
     if (ignorePath == '*') {
         return true;
