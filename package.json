@@ -1,0 +1,29 @@
+{
+    "name": "custom-cors",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "scripts": {
+        "prepublish": "npm run build",
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlexFujiama/custom-cors.git"
+    },
+    "author": "Alex Fujiama",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AlexFujiama/custom-cors/issues"
+    },
+    "homepage": "https://github.com/AlexFujiama/custom-cors#readme",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.9",
+        "typescript": "^4.8.4"
+    }
+}
